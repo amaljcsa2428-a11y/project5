@@ -1,0 +1,17 @@
+<div class="card product-card">
+  <img src="{{productData.image}}" class="card-img-top" alt="Headset">
+  <div class="card-body">
+    <h5 class="card-title">{{productData.title}}</h5>
+
+    <p class="card-text">
+        {{productData.description}}
+    </p>
+
+    <h4 class="product-price">{{productData.price}}</h4>
+
+    <a [routerLink]="['/content', productData.id]" class="btn btn-primary">
+      Explore More
+    </a>
+</div>
+
+</div>
